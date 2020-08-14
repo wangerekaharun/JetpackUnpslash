@@ -1,3 +1,5 @@
 <resources>
   <string name="app_name">JetpackUnsplash</string>
+  <string name="text_unsplash_fragment">Unsplash</string>
+  <string name="text_playground_fragment">Playground</string>
 </resources>

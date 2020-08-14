@@ -9,7 +9,7 @@ object Versions {
     const val jetPack = "1.1.0"
     const val constraintLayout = "1.1.3"
     const val ktx = "1.1.0"
-    const val material = "1.0.0"
+    const val material = "1.2.0"
 
     //Version codes for all the test libraries
     const val junit4 = "4.12"
@@ -21,6 +21,26 @@ object Versions {
     const val ktlint = "9.3.0"
     const val detekt = "1.10.0"
     const val dokka = "0.10.1"
+
+    //Networking
+    const val retrofit = "2.9.0"
+    const val okhttp = "4.8.0"
+    const val loggingInterceptor = "4.7.2"
+
+    //DI - KOIN
+    const val koin = "2.1.5"
+
+    // Room db
+    const val room = "2.2.5"
+
+    // Lifecycle
+    const val lifecycle = "2.3.0-alpha06"
+
+    // Coroutines
+    const val coroutines = "1.3.7"
+
+    // Paging Library
+    const val paging = "3.0.0-alpha04"
 }
 
 object BuildPlugins {
@@ -35,16 +55,30 @@ object BuildPlugins {
     const val kotlinAndroid = "org.jetbrains.kotlin.android"
     const val kotlinAndroidExtensions = "org.jetbrains.kotlin.android.extensions"
 }
+
 object Libraries {
     //Any Library is added here
     const val kotlinStandardLibrary = "org.jetbrains.kotlin:kotlin-stdlib-jdk7:${Versions.kotlin}"
-    const val appCompat        = "androidx.appcompat:appcompat:${Versions.jetPack}"
-    const val constraintLayout = "androidx.constraintlayout:constraintlayout:${Versions.constraintLayout}"
-    const val ktxCore          = "androidx.core:core-ktx:${Versions.ktx}"
+    const val appCompat = "androidx.appcompat:appcompat:${Versions.jetPack}"
+    const val constraintLayout =
+        "androidx.constraintlayout:constraintlayout:${Versions.constraintLayout}"
+    const val ktxCore = "androidx.core:core-ktx:${Versions.ktx}"
     const val materialComponents = "com.google.android.material:material:${Versions.material}"
+    const val paging = "androidx.paging:paging-runtime:${Versions.paging}"
+    const val lifecycle = "androidx.lifecycle:lifecycle-runtime-ktx:${Versions.lifecycle}"
+    const val viewModel = "androidx.lifecycle:lifecycle-viewmodel-ktx:${Versions.lifecycle}"
+    const val livedata = "androidx.lifecycle:lifecycle-livedata-ktx:${Versions.lifecycle}"
+    const val lifecycleExtensions = "androidx.lifecycle:lifecycle-extensions:${Versions.lifecycle}"
+    const val retrofit = "com.squareup.retrofit2:retrofit:${Versions.retrofit}"
+    const val gsonConverter = "com.squareup.retrofit2:converter-gson:${Versions.retrofit}"
+    const val loggingInterceptor =
+        "com.squareup.okhttp3:logging-interceptor:${Versions.loggingInterceptor}"
+    const val coroutines = "org.jetbrains.kotlinx:kotlinx-coroutines-android:${Versions.coroutines}"
+    const val coroutinesAndroid =
+        "org.jetbrains.kotlinx:kotlinx-coroutines-core:${Versions.coroutines}"
 }
 
-object AndroidSDK{
+object AndroidSDK {
     //minimum, compile and target SDK versions
     const val min = 21
     const val compile = 30
@@ -53,9 +87,9 @@ object AndroidSDK{
 
 object TestLibraries {
     //any test library is added here
-    const val junit4     = "junit:junit:${Versions.junit4}"
+    const val junit4 = "junit:junit:${Versions.junit4}"
     const val testRunner = "androidx.test:runner:${Versions.testRunner}"
-    const val espresso   = "androidx.test.espresso:espresso-core:${Versions.espresso}"
+    const val espresso = "androidx.test.espresso:espresso-core:${Versions.espresso}"
     const val annotation = "androidx.annotation:annotation:${Versions.annotation}"
 }
 

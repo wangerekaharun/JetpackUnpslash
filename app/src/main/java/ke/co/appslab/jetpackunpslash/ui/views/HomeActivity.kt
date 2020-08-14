@@ -1,15 +1,16 @@
-package ke.co.appslab.jetpackunpslash
+package ke.co.appslab.jetpackunpslash.ui.views
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import ke.co.appslab.jetpackunpslash.R
 
 /**
  *  Main Activity which is the Launcher Activity
  */
 
-class MainActivity : AppCompatActivity() {
+class HomeActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_home)
     }
 }

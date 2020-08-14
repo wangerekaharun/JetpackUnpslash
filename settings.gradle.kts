@@ -24,4 +24,4 @@ pluginManagement {
     }
 }
 include("app")
-rootProject.name = "GradlePlugins"
+rootProject.name = "JetpackUnsplash"
