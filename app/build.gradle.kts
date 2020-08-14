@@ -3,6 +3,7 @@ plugins {
     id(BuildPlugins.kotlinAndroid)
     id(BuildPlugins.kotlinAndroidExtensions)
     id(BuildPlugins.ktlintPlugin)
+    id(BuildPlugins.safeArgsPlugin)
 }
 android {
     compileSdkVersion(AndroidSDK.compile)
@@ -19,6 +20,16 @@ android {
     kotlinOptions {
         jvmTarget = JavaVersion.VERSION_1_8.toString()
     }
+
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_1_8
+        targetCompatibility = JavaVersion.VERSION_1_8
+    }
+
+    buildFeatures {
+        viewBinding = true
+    }
+
 
     buildTypes {
         getByName("release") {
@@ -45,6 +56,8 @@ android {
         implementation(Libraries.coroutinesAndroid)
         implementation(Libraries.koin)
         implementation(Libraries.koinViewModel)
+        implementation(Libraries.navigationFragment)
+        implementation(Libraries.navigationKtx)
         testImplementation(TestLibraries.junit4)
         androidTestImplementation(TestLibraries.testRunner)
         androidTestImplementation(TestLibraries.espresso)

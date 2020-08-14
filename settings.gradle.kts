@@ -12,6 +12,7 @@ pluginManagement {
         id("org.jetbrains.kotlin.android.extensions") version "1.3.72"
         id("com.android.library") version "4.0.1"
         id("com.google.firebase.crashlytics") version "2.1.0"
+        id("androidx.navigation.safeargs.kotlin") version "2.3.0"
     }
 
     resolutionStrategy {
@@ -19,6 +20,7 @@ pluginManagement {
             when (requested.id.id) {
                 "com.android.application", "com.android.library" -> useModule("com.android.tools.build:gradle:4.0.1")
                 "com.google.firebase.crashlytics" -> useModule("com.google.firebase:firebase-crashlytics-gradle:2.1.0")
+                "androidx.navigation.safeargs.kotlin"-> useModule("androidx.navigation:navigation-safe-args-gradle-plugin:2.3.0")
             }
         }
     }

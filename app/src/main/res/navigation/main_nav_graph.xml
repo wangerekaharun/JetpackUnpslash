@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav_graph"
+    app:startDestination="@id/photosFragment">
+
+    <fragment
+        android:id="@+id/photosFragment"
+        android:name="ke.co.appslab.jetpackunpslash.ui.views.fragments.PhotosFragment"
+        android:label="PhotosFragment"
+        tools:layout="@layout/fragment_photos"/>
+    <fragment
+        android:id="@+id/playgroundFragment"
+        android:name="ke.co.appslab.jetpackunpslash.ui.views.fragments.PlaygroundFragment"
+        android:label="PlaygroundFragment"
+        tools:layout="@layout/fragment_playground"/>
+</navigation>

@@ -7,6 +7,7 @@ plugins {
     id(BuildPlugins.kotlinAndroid) apply false
     id(BuildPlugins.kotlinAndroidExtensions) apply false
     id(BuildPlugins.dokkaPlugin) version Versions.dokka
+    id(BuildPlugins.safeArgsPlugin) apply false
 }
 
 allprojects {

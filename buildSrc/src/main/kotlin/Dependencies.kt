@@ -43,12 +43,11 @@ object Versions {
     const val paging = "3.0.0-alpha04"
 
     // Navigation
+    const val navigation = "2.3.0"
 }
 
 object BuildPlugins {
     //All the build plugins are added here
-    const val androidGradlePlugin = "com.android.tools.build:gradle:${Versions.buildToolsVersion}"
-    const val kotlinGradlePlugin = "org.jetbrains.kotlin:kotlin-gradle-plugin:${Versions.kotlin}"
     const val androidLibrary = "com.android.library"
     const val ktlintPlugin = "org.jlleitschuh.gradle.ktlint"
     const val detektPlugin = "io.gitlab.arturbosch.detekt"
@@ -56,6 +55,7 @@ object BuildPlugins {
     const val androidApplication = "com.android.application"
     const val kotlinAndroid = "org.jetbrains.kotlin.android"
     const val kotlinAndroidExtensions = "org.jetbrains.kotlin.android.extensions"
+    const val safeArgsPlugin = "androidx.navigation.safeargs.kotlin"
 }
 
 object Libraries {
@@ -80,6 +80,12 @@ object Libraries {
         "org.jetbrains.kotlinx:kotlinx-coroutines-core:${Versions.coroutines}"
     const val koin = "org.koin:koin-android:${Versions.koin}"
     const val koinViewModel = "org.koin:koin-androidx-viewmodel:${Versions.koin}"
+    const val navigationFragment =
+        "androidx.navigation:navigation-fragment-ktx:${Versions.navigation}"
+    const val navigationKtx = "androidx.navigation:navigation-ui-ktx:${Versions.navigation}"
+    const val dynamicFeatures =
+        "androidx.navigation:navigation-dynamic-features-fragment:${Versions.navigation}"
+
 }
 
 object AndroidSDK {
