@@ -3,7 +3,7 @@ package ke.co.appslab.jetpackunpslash.data.remote.models
 
 import com.google.gson.annotations.SerializedName
 
-data class UnsplashApiResponseItem(
+data class Photo(
     @SerializedName("alt_description")
     val altDescription: String,
     @SerializedName("categories")

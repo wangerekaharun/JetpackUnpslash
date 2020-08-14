@@ -16,6 +16,10 @@ android {
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
 
+    kotlinOptions {
+        jvmTarget = JavaVersion.VERSION_1_8.toString()
+    }
+
     buildTypes {
         getByName("release") {
             isMinifyEnabled = false
@@ -39,6 +43,8 @@ android {
         implementation(Libraries.livedata)
         implementation(Libraries.coroutines)
         implementation(Libraries.coroutinesAndroid)
+        implementation(Libraries.koin)
+        implementation(Libraries.koinViewModel)
         testImplementation(TestLibraries.junit4)
         androidTestImplementation(TestLibraries.testRunner)
         androidTestImplementation(TestLibraries.espresso)

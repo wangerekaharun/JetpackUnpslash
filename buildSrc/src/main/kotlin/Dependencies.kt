@@ -41,6 +41,8 @@ object Versions {
 
     // Paging Library
     const val paging = "3.0.0-alpha04"
+
+    // Navigation
 }
 
 object BuildPlugins {
@@ -76,6 +78,8 @@ object Libraries {
     const val coroutines = "org.jetbrains.kotlinx:kotlinx-coroutines-android:${Versions.coroutines}"
     const val coroutinesAndroid =
         "org.jetbrains.kotlinx:kotlinx-coroutines-core:${Versions.coroutines}"
+    const val koin = "org.koin:koin-android:${Versions.koin}"
+    const val koinViewModel = "org.koin:koin-androidx-viewmodel:${Versions.koin}"
 }
 
 object AndroidSDK {
