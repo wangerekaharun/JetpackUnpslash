@@ -8,7 +8,7 @@ android {
     compileSdkVersion(AndroidSDK.compile)
     buildToolsVersion("30.0.1")
     defaultConfig {
-        applicationId = "ke.co.appslab.gradleplugins"
+        applicationId = "ke.co.appslab.jetpackunsplash"
         minSdkVersion(AndroidSDK.min)
         targetSdkVersion(AndroidSDK.target)
         versionCode = Versions.code
