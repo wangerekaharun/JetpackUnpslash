@@ -31,7 +31,7 @@ object Versions {
     const val koin = "2.1.5"
 
     // Room db
-    const val room = "2.2.5"
+    const val room = "2.3.0-alpha02"
 
     // Lifecycle
     const val lifecycle = "2.3.0-alpha06"
@@ -59,6 +59,7 @@ object BuildPlugins {
     const val kotlinAndroid = "org.jetbrains.kotlin.android"
     const val kotlinAndroidExtensions = "org.jetbrains.kotlin.android.extensions"
     const val safeArgsPlugin = "androidx.navigation.safeargs.kotlin"
+    const val kotlinKapt = "kotlin-kapt"
 }
 
 object Libraries {
@@ -89,6 +90,9 @@ object Libraries {
     const val dynamicFeatures =
         "androidx.navigation:navigation-dynamic-features-fragment:${Versions.navigation}"
     const val coil = "io.coil-kt:coil:${Versions.coil}"
+    const val room = "androidx.room:room-runtime:${Versions.room}"
+    const val roomKtx = "androidx.room:room-ktx:${Versions.room}"
+    const val roomCompiler = "androidx.room:room-compiler:${Versions.room}"
 
 }
 

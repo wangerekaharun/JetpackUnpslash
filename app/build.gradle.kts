@@ -4,6 +4,7 @@ plugins {
     id(BuildPlugins.kotlinAndroidExtensions)
     id(BuildPlugins.ktlintPlugin)
     id(BuildPlugins.safeArgsPlugin)
+    id(BuildPlugins.kotlinKapt)
 }
 android {
     compileSdkVersion(AndroidSDK.compile)
@@ -59,6 +60,9 @@ android {
         implementation(Libraries.navigationFragment)
         implementation(Libraries.navigationKtx)
         implementation(Libraries.coil)
+        implementation(Libraries.room)
+        implementation(Libraries.roomKtx)
+        kapt(Libraries.roomCompiler)
         testImplementation(TestLibraries.junit4)
         androidTestImplementation(TestLibraries.testRunner)
         androidTestImplementation(TestLibraries.espresso)
