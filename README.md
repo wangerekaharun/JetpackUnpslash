@@ -1,7 +1,9 @@
 # JetpackUnsplash
 Jetpack is a suite of libraries to help developers follow best practices, reduce boilerplate code, and write code that works consistently across Android versions and devices so that developers can focus on the court they care about.
 
-This is a demo project for [GDG Kisumu](https://twitter.com/gdg_kisumu) for the Android Jetpack Meetup.
+This is a demo project for [GDG Kisumu](https://twitter.com/gdg_kisumu) for the Android Jetpack Meetup. The project uses Gradle Kotlin DSL, for more information about this here are two articles to help you:
+- [A Day with an Elephant in the Room: Configuring Gradle Plugins.](https://medium.com/@harunwangereka/a-day-with-an-elephant-in-the-room-configuring-gradle-plugins-3331b0be64c7)
+- [Migrating to Kotlin DSL](https://medium.com/@evanschepsiror/migrating-to-kotlin-dsl-4ee0d6d5c977)
 
 
 ## Using Unsplash API
