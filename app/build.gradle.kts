@@ -58,6 +58,7 @@ android {
         implementation(Libraries.koinViewModel)
         implementation(Libraries.navigationFragment)
         implementation(Libraries.navigationKtx)
+        implementation(Libraries.coil)
         testImplementation(TestLibraries.junit4)
         androidTestImplementation(TestLibraries.testRunner)
         androidTestImplementation(TestLibraries.espresso)

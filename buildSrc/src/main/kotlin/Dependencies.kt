@@ -44,6 +44,9 @@ object Versions {
 
     // Navigation
     const val navigation = "2.3.0"
+
+    // Coil
+    const val coil = "0.11.0"
 }
 
 object BuildPlugins {
@@ -85,6 +88,7 @@ object Libraries {
     const val navigationKtx = "androidx.navigation:navigation-ui-ktx:${Versions.navigation}"
     const val dynamicFeatures =
         "androidx.navigation:navigation-dynamic-features-fragment:${Versions.navigation}"
+    const val coil = "io.coil-kt:coil:${Versions.coil}"
 
 }
 

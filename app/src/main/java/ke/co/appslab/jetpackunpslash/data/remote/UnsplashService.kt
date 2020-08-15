@@ -8,9 +8,9 @@ import retrofit2.http.Query
 
 interface UnsplashService {
 
-    @GET("/photos")
+    @GET("photos")
     suspend fun fetchPhotos(
-        @Query("") page: Int,
+        @Query("page") page: Int,
         @Query("per_page") perPage: Int,
         @Query("order_by") orderBy: String,
         @Query("client_id") clientId: String

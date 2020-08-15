@@ -17,7 +17,7 @@ class UnsplashPagingSource(
         val position = params.key ?: START_PAGE
         return try {
             val response =
-                unsplashService.fetchPhotos(position, params.loadSize, "latest", accessKey)
+                unsplashService.fetchPhotos(1, params.loadSize, "latest", accessKey)
             val photos = response.body()!!
             LoadResult.Page(
                 data = photos,
