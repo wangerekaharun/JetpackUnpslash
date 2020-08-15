@@ -6,7 +6,9 @@ This is a demo project for [GDG Kisumu](https://twitter.com/gdg_kisumu) for the 
 
 ## Using Unsplash API
 
-Start by creating a resource file for your secrets called res/values/secrets.xml with a string pair unsplash_access_key value:
+Register and get your ACCESS KEY from unsplash [here](https://unsplash.com/developers). There are well detailed instuctions on how to create an app and get your access key.
+
+After you get the access key, start by creating a resource file for your secrets called res/values/secrets.xml with a string pair unsplash_access_key value:
 ```
 <!-- Inside of `res/values/secrets.xml` -->
 <?xml version="1.0" encoding="utf-8"?>
